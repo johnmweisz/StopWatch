@@ -4,8 +4,8 @@ namespace StopWatch
 {
     class StopWatch
     {
-        private DateTime? _start = null;
-        private DateTime? _stop = null;
+        private DateTime? _start;
+        private DateTime? _stop;
 
         public void Start()
         {
