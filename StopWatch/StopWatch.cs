@@ -9,14 +9,14 @@ namespace StopWatch
 
         public void Start()
         {
-            if (_start != null) throw new InvalidOperationException("StopWatch was already started.");
+            if (_start != null) throw new InvalidOperationException("StopWatch is already started.");
             _start = DateTime.Now;
             Console.WriteLine("Timer started.");
         }
 
         public void Stop()
         {
-            if (_start == null) throw new InvalidOperationException("StopWatch was not started.");
+            if (_start == null) throw new InvalidOperationException("StopWatch is not started.");
             _stop = DateTime.Now;
             Console.WriteLine(Duration());
             _start = null;
